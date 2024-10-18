@@ -1,0 +1,82 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centrando el texto en medio de la pantalla */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté por encima del video */
+}
+
+h1 {
+    color: white;
+    text-shadow: 0px 0px 10px cyan,
+                 0px 0px 20px cyan,
+                 0px 0px 40px cyan,
+                 0px 0px 80px cyan;
+    font-size: 120px;
+    font-family: Thelorin;
+    z-index: 2; /* Asegura que el texto esté por encima del video */
+    margin-top: -50px;
+}
+
+.navegacion {
+    position: absolute;
+    top: 10px; /* Alinea la navegación desde la parte superior */
+    right: 20px; /* Alinea la navegación desde la derecha */
+    z-index: 2; /* Asegura que la navegación esté por encima del video */
+}
+
+.navegacion ol {
+    list-style-type: none;
+}
+
+.navegacion ol li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navegacion ol li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 5px;
+}
+
+.navegacion ol li a:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cambio en hover */
+}
+
+/* Estilos para el video */
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* El video está en el fondo */
+}
+
+/* Capa de oscurecimiento sobre el video */
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    z-index: 1; /* La capa está por detrás del contenido */
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style-catalogo.css">
+    <title>BuildTech - Catalogo</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="Img/logo-invertido.png" height="100" width="120" align="left">
+        <p>BuildTech</p>
+    </div>
+
+    <div class="navegacion">
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Quienes-somos.html">Quienes Somos</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+        </ol>
+    </div>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Img/catalogo/Ryzen 3 3200G.png" alt="">
+                    </div>
+                    <p class="descripcion">Ryzen 3 3200G</p>
+                    <span class="precio">$ 2,300 MXN</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Img/catalogo/i5 10400f.png" alt="">
+                    </div>
+                    <p class="descripcion">Intel Core i5 10400F</p>
+                    <span class="precio">$ 3,200 MXN</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Img/catalogo/ryzen 5 5600x.png" alt="">
+                    </div>
+                    <p class="descripcion">AMD Ryzen 5 5600X</p>
+                    <span class="precio">$ 4,500 MXN</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Img/catalogo/i7 12700k.png" alt="">
+                    </div>
+                    <p class="descripcion">Intel Core i7 12700K</p>
+                    <span class="precio">$ 6,800 MXN</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Img/catalogo/RTX 3060.png" alt="">
+                    </div>
+                    <p class="descripcion">NVIDIA RTX 3060</p>
+                    <span class="precio">$ 7,500 MXN</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Img/catalogo/AMD RX 6700 XT.png" alt="">
+                    </div>
+                    <p class="descripcion">AMD RX 6700 XT</p>
+                    <span class="precio">$ 9,000 MXN</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Img/catalogo/Placa madre ASUS B550.png" alt="">
+                    </div>
+                    <p class="descripcion">Placa madre ASUS B550-F</p>
+                    <span class="precio">$ 2,800 MXN</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Img/catalogo/MSI Z490-A PRO.png" alt="">
+                    </div>
+                    <p class="descripcion">MSI Z490-A PRO</p>
+                    <span class="precio">$ 3,000 MXN</span>
+                </div>
+            </div> 
+        </div>
+
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="Img/catalogo/1.png" alt="" id="img">
+                <h2 id="modelo">Modelo seleccionado</h2>
+                <p id="descripcion">Descripción del componente</p>
+                <span class="precio" id="precio">$ 0 MXN</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
